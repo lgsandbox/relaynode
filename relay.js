@@ -29,7 +29,7 @@ app.get("/rest", function (req, res) {
 });
 
 const relay = app.listen(port, function () {
-    console.log(`gundb relay node running on` + "http://localhost://" + port);
+    console.log(`gundb relay node running on` + "heroku" + port);
     console.log(`gql path is ${apolloServer.graphqlPath}`);
 });
 
