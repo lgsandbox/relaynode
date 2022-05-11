@@ -4,7 +4,7 @@ const { ApolloServer } = require("apollo-server-express")
 const http = require("http")
 const app = express()
 const typeDefs = require("./schema")
-const port = process.env.PORT
+const port = process.env.OPENSHIFT_NODEJS_PORT || process.env.VCAP_APP_PORT || process.env.PORT || process.argv[2] || 8765
 
 const resolvers = {
   
