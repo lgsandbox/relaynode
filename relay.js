@@ -4,7 +4,7 @@ const { ApolloServer } = require("apollo-server-express")
 const http = require("http")
 const app = express()
 const typeDefs = require("./schema")
-const port = 4000
+const port = process.env.PORT
 
 const resolvers = {
   
